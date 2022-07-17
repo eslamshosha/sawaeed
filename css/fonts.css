@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "noor";
+  src: url("../webfonts/noor/Noor-Light.woff2") format("woff2"),
+    url("../webfonts/noor/Noor-Light.woff") format("woff"),
+    url("../webfonts/noor/Noor-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "noor";
+  src: url("../webfonts/noor/Noor-Regular.woff2") format("woff2"),
+    url("../webfonts/noor/Noor-Regular.woff") format("woff"),
+    url("../webfonts/noor/Noor-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "noor";
+  src: url("../webfonts/noor/Noor-Bold.woff2") format("woff2"),
+    url("../webfonts/noor/Noor-Bold.woff") format("woff"),
+    url("../webfonts/noor/Noor-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../webfonts/poppins/Poppins-Light.woff2") format("woff2"),
+    url("../webfonts/poppins/Poppins-Light.woff") format("woff"),
+    url("../webfonts/poppins/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poppins";
+  src: url("../webfonts/poppins/Poppins-Regular.woff2") format("woff2"),
+    url("../webfonts/poppins/Poppins-Regular.woff") format("woff"),
+    url("../webfonts/poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poppins";
+  src: url("../webfonts/poppins/Poppins-Medium.woff2") format("woff2"),
+    url("../webfonts/poppins/Poppins-Medium.woff") format("woff"),
+    url("../webfonts/poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "poppins";
+  src: url("../webfonts/poppins/Poppins-Bold.woff2") format("woff2"),
+    url("../webfonts/poppins/Poppins-Bold.woff") format("woff"),
+    url("../webfonts/poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
