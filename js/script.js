@@ -200,7 +200,9 @@ $(document).ready(function () {
       },
     });
   }
-  $(".new-address-select").select2();
+  if ($(".new-address-select").length) {
+    $(".new-address-select").select2();
+  }
 });
 //rotate border
 if ($(window).width() >= 991) {
