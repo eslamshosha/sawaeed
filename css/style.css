@@ -913,7 +913,10 @@ html[dir="ltr"] .honored .bg-after {
   }
   .services-cont {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 30px 20px;
+  }
+  .services-img{
+    margin-bottom: 30px;
   }
   .services-img img {
     max-width: 80%;
@@ -1509,6 +1512,9 @@ html[dir="rtl"] .footer-accordion.active:after {
     transform: translateX(50%);
     width: 55px;
     height: 55px;
+  }
+  html[dir="ltr"] .header-scroll-down-butt{
+    transform: translateX(-50%);
   }
   .header-scroll-down-butt i {
     font-size: 25px;
