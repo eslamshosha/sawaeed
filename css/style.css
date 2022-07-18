@@ -931,12 +931,28 @@ html[dir="ltr"] .honored .bg-after {
   padding: 115px 0 130px;
   background-color: var(--main-color);
   position: relative;
+  overflow: hidden;
+}
+.map-img{
+  position: absolute;
+  top: -70px;
+  inset-inline-end: 5.7%;
+  width: 50.5%;
+  max-width: 707px;
+  pointer-events: none;
+}
+html[dir="ltr"] .map-img{
+  transform: scaleX(-1);
+}
+.map-img svg{
+  display: block;
 }
 .map-contnet {
   text-align: start;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: max-content;
 }
 .map-head {
   font-weight: 700;
@@ -1075,6 +1091,13 @@ a {
 @media (max-width: 767px) {
   .active-map {
     padding: 80px 0;
+  }
+  .map-img{
+    position: relative;
+    width: 100%;
+    top: unset;
+    inset-inline-end: unset;
+    margin-top: 40px;
   }
 }
 /*                     active map section                     */
@@ -2052,7 +2075,7 @@ html[dir="ltr"]
 .branch-list {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
-  max-height: 420px;
+  height: 420px;
   overflow-y: auto;
 }
 .branch-list a {
@@ -2087,7 +2110,7 @@ html[dir="ltr"]
 .list_single {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
-  max-height: 420px;
+  height: 420px;
   padding: 30px;
   text-align: start;
 }
