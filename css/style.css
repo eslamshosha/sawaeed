@@ -933,6 +933,7 @@ html[dir="ltr"] .honored .bg-after {
   position: relative;
   overflow: hidden;
 }
+
 .map-img{
   position: absolute;
   top: -70px;
@@ -1048,7 +1049,6 @@ html[dir="ltr"] .mas {
     mask-position: 100% 0;
   }
 }
-
 @keyframes ani {
   from {
     -webkit-mask-position: 0 0;
