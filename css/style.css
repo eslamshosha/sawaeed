@@ -163,14 +163,17 @@ header {
 }
 .fixed-nav .lang-ancor {
   color: var(--main-color);
-  border-color: var(--main-color);
+  border-color: rgba(12, 48, 105, 0.2);
+}
+.fixed-nav .lang-ancor:before {
+  background: var(--main-hover);
 }
 .fixed-nav .lang-ancor:hover {
-  color: var(--main-hover);
+  color: var(--white-color);
   border: 2px solid var(--main-hover);
 }
 .fixed-nav .nav-header figure img {
-  max-width: 71px;
+  max-width: 50px;
   transition: all 0.3s ease-in-out;
 }
 .fixed-nav .open-bars::after {
@@ -204,16 +207,16 @@ header {
   color: var(--white-color);
 }
 .lang-ancor {
-  font-size: 16px;
+  font-size: 14px;
   font-family: "poppins";
   font-weight: 500;
   color: var(--white-color);
-  width: 140px;
-  height: 42px;
+  width: 110px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid var(--white-color);
+  border: 2px solid rgba(255, 255, 255, 0.5);
   position: relative;
   overflow: hidden;
   transform: perspective(1px) translateZ(0);
@@ -282,21 +285,21 @@ main {
   );
   opacity: 0.902;
 }
-html[dir="ltr"] .main-bg{
+html[dir="ltr"] .main-bg {
   background-image: -moz-linear-gradient(
     0deg,
     rgb(42, 172, 144) 100%,
-    rgb(7, 90, 129) 0%,
+    rgb(7, 90, 129) 0%
   );
   background-image: -webkit-linear-gradient(
     0deg,
     rgb(42, 172, 144) 100%,
-    rgb(7, 90, 129) 0%,
+    rgb(7, 90, 129) 0%
   );
   background-image: -ms-linear-gradient(
     0deg,
     rgb(42, 172, 144) 100%,
-    rgb(7, 90, 129) 0%,
+    rgb(7, 90, 129) 0%
   );
 }
 .main-cont-relative {
@@ -315,12 +318,15 @@ main .main-cont {
   top: 50%;
   left: 50%;
   width: 100%;
-  max-width: 700px;
-  min-height: 150px;
+  max-width: 580px;
+  min-height: 130px;
   text-align: center;
   transform: translate(-50%, -50%);
   z-index: 4;
   align-items: center;
+}
+html[dir="ltr"] main .main-cont {
+  max-width: 850px;
 }
 main .bg-after {
   position: absolute;
@@ -337,6 +343,7 @@ html[dir="ltr"] main .bg-after {
   font-size: 48px;
   color: var(--white-color);
   font-weight: 700;
+  max-width: max-content;
   text-align: center;
   margin-bottom: 0;
   text-transform: capitalize;
@@ -351,7 +358,7 @@ html[dir="ltr"] main .bg-after {
   color: var(--white-color);
   font-size: 36px;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 15px;
   width: 0;
   overflow: hidden;
   display: inline-block;
@@ -441,7 +448,7 @@ html[dir="ltr"] main .bg-after {
     bottom: -60px;
     width: 30%;
   }
-  main .main-cont{
+  main .main-cont {
     min-height: unset;
     padding: 0 20px;
   }
@@ -509,6 +516,9 @@ figure.about-img-cont {
   color: var(--main-color);
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
+}
+.nav-link.about-us-link {
+  padding: 0;
 }
 .about-us-link:first-of-type {
   margin-inline-end: 65px;
@@ -990,7 +1000,7 @@ html[dir="ltr"] .honored .bg-after {
 
 .map-img {
   position: absolute;
-  top: -70px;
+  top: -85px;
   inset-inline-end: 5.7%;
   width: 50.5%;
   max-width: 707px;
@@ -1024,7 +1034,7 @@ html[dir="ltr"] .map-img {
   align-items: center;
   margin-bottom: 15px;
 }
-.map-icon:first-of-type{
+.map-icon:first-of-type {
   color: var(--main-hover);
 }
 .map-icon img {
@@ -1039,7 +1049,7 @@ html[dir="ltr"] .map-img {
   border-radius: 25px;
   background-color: transparent;
   color: var(--white-color) !important;
-  border: 2px solid var(--white-color);
+  border: 2px solid rgba(255, 255, 255, 0.5);
   transform: perspective(1px) translateZ(0);
   position: relative;
   overflow: hidden;
@@ -1048,7 +1058,7 @@ html[dir="ltr"] .map-img {
   margin-top: 25px;
   transition: all 0.3s ease-in-out;
 }
-html[dir="ltr"] .map-ancor{
+html[dir="ltr"] .map-ancor {
   font-size: 16px;
 }
 .map-ancor:before {
@@ -1465,13 +1475,13 @@ html[dir="rtl"] .footer-accordion.active:after {
     margin-inline-start: 15px;
   }
   .lang-ancor {
-    width: 120px;
+    width: 110px;
     height: 36px;
     font-size: 14px;
   }
   .fixed-nav .nav-header figure img,
   .nav-header figure img {
-    max-width: 61px;
+    max-width: 50px;
   }
   .nav-header {
     padding: 10px 0;
