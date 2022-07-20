@@ -122,21 +122,60 @@
                 الأهداف والرؤية الوطنية لتمكين الكوادر الوطنية في سوق العمل
                 بالقطاع الخاص
               </p>
-              <div class="link-cont">
-                <a href="#" class="about-us-link">
-                  <i class="las la-eye"></i>
-                  رؤيتنا
-                </a>
-                <a href="#" class="about-us-link">
-                  <i class="las la-scroll"></i>
-                  رسالتنا
-                </a>
+              <ul class="link-cont nav nav-pills" id="myTab" role="tablist">
+                <li class="active nav-item" role="presentation">
+                  <a
+                    href="#!"
+                    id="home-tab"
+                    data-toggle="tab"
+                    data-target="#home"
+                    class="about-us-link nav-link active"
+                  >
+                    <i class="las la-eye"></i>
+                    رؤيتنا
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#!"
+                    id="home-tab"
+                    data-toggle="tab"
+                    data-target="#profile"
+                    aria-selected="true"
+                    class="about-us-link nav-link"
+                  >
+                    <i class="las la-scroll"></i>
+                    رسالتنا
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="home"
+                  role="tabpanel"
+                  aria-selected="false"
+                  aria-labelledby="home-tab"
+                >
+                  <p class="about-us-pargh mb-0">
+                    أن نكون الشركة السعودية الرائدة في إيجاد وتمكين الحلول
+                    المهنية للأفراد والقطاع الخاص بما يتوائم مع احتياجات سوق
+                    العمل لزيادة معدلات التوظيف وتحقيق اقتصاد مزدهر
+                  </p>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <p class="about-us-pargh mb-0">
+                    أن نكون الشركة السعودية الرائدة في إيجاد وتمكين الحلول
+                    المهنية للأفراد والقطاع الخاص بما يتوائم مع احتياجات سوق
+                    العمل لزيادة معدلات التوظيف وتحقيق اقتصاد مزدهر555555
+                  </p>
+                </div>
               </div>
-              <p class="about-us-pargh mb-0">
-                أن نكون الشركة السعودية الرائدة في إيجاد وتمكين الحلول المهنية
-                للأفراد والقطاع الخاص بما يتوائم مع احتياجات سوق العمل لزيادة
-                معدلات التوظيف وتحقيق اقتصاد مزدهر
-              </p>
             </div>
           </div>
         </div>
@@ -395,7 +434,6 @@
             <span>7 مراكز رجالية</span>
           </div>
           <div class="map-ancor-cont">
-            <span class="mas">مواقع المراكز على الخريطة</span>
             <a href="#" class="map-ancor"> مواقع المراكز على الخريطة </a>
           </div>
         </div>
@@ -449,7 +487,7 @@
               .st4,
               .st5 {
                 animation-name: scale;
-                animation-duration: 0.6s;
+                animation-duration: 0.8s;
                 animation-iteration-count: infinite;
                 transform-origin: center center;
                 transform-box: fill-box;
@@ -459,22 +497,34 @@
                 0% {
                   transform: scale(0, 0);
                 }
+                25% {
+                  transform: scale(0.5, 0.5);
+                }
                 50% {
+                  transform: scale(1, 1);
+                }
+                75% {
                   transform: scale(0.5, 0.5);
                 }
                 100% {
-                  transform: scale(1.2, 1.2);
+                  transform: scale(0, 0);
                 }
               }
               @-webkit-keyframes scale {
                 0% {
                   -webkit-transform: scale(0, 0);
                 }
+                25% {
+                  -webkit-transform: scale(0.5, 0.5);
+                }
                 50% {
+                  -webkit-transform: scale(1, 1);
+                }
+                75% {
                   -webkit-transform: scale(0.5, 0.5);
                 }
                 100% {
-                  -webkit-transform: scale(1.2, 1.2);
+                  -webkit-transform: scale(0, 0);
                 }
               }
             </style>

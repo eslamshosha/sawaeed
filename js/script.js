@@ -52,7 +52,8 @@ $(document).ready(function () {
       $stickyheader.removeClass("fixed-header", { duration: 500 });
     }
   });
-
+  
+  
   //scroll down button to about us section
   $("#scroll-to-about-section").click(function () {
     $("html, body").animate(
@@ -99,6 +100,17 @@ $(document).ready(function () {
       }
     });
   }
+  setTimeout(
+    function header_animation(){
+        $('.main-captions').animate({width: '100%'}, 1500);
+        setTimeout(function(){ 
+            $('.main-captions').css("border","none");
+            $('.main-span').css("border-right","1px solid #fff");
+            $('.main-span').animate({width: '100%'}, 1500);
+            setTimeout(function(){ $('.main-span').css("border","none");},1500);
+        }, 1500);
+    }
+, 700);
   ///////// **partner-section** /////////
   var screen = new Swiper(".partner-section .swiper-container", {
     loop: true,

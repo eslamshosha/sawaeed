@@ -126,22 +126,68 @@
                 expertise and methods with National goals and vision to empower
                 national cadres in the labor market in the private sector
               </p>
-              <div class="link-cont">
-                <a href="#" class="about-us-link">
-                  <i class="las la-eye"></i>
-                  our vision
-                </a>
-                <a href="#" class="about-us-link">
-                  <i class="las la-scroll"></i>
-                  Our Goals
-                </a>
+              <ul class="link-cont nav nav-pills" id="myTab" role="tablist">
+                <li class="active nav-item" role="presentation">
+                  <a
+                    href="#!"
+                    id="home-tab"
+                    data-toggle="tab"
+                    data-target="#home"
+                    class="about-us-link nav-link active"
+                  >
+                    <i class="las la-eye"></i>
+                    our vision
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#!"
+                    id="home-tab"
+                    data-toggle="tab"
+                    data-target="#profile"
+                    aria-selected="true"
+                    class="about-us-link nav-link"
+                  >
+                    <i class="las la-scroll"></i>
+                    Our Goals
+                  </a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="home"
+                  role="tabpanel"
+                  aria-selected="false"
+                  aria-labelledby="home-tab"
+                >
+                  <p class="about-us-pargh mb-0">
+                    Sawaeed is the first and foremost in operating the most
+                    important employment support programs under the umbrella of
+                    The Human Resources Fund (Hadaf), and since 2019, it has
+                    become a model Unique to the company that is able to blend
+                    world-class expertise and methods with National goals and
+                    vision to empower national cadres in the labor market in the
+                    private sector
+                  </p>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <p class="about-us-pargh mb-0">
+                    Sawaeed is the first and foremost in operating the most
+                    important employment support programs under the umbrella of
+                    The Human Resources Fund (Hadaf), and since 2019, it has
+                    become a model Unique to the company that is able to blend
+                    world-class expertise and methods with National goals and
+                    vision to empower national cadres in the labor market in the
+                    private sector
+                  </p>
+                </div>
               </div>
-              <p class="about-us-pargh mb-0">
-                To be the leading Saudi company in finding and enabling
-                professional solutions For individuals and the private sector in
-                line with the needs of the labor market to increase Employment
-                rates and a thriving economy
-              </p>
             </div>
           </div>
         </div>
@@ -403,7 +449,6 @@
             <span>7 men's centers</span>
           </div>
           <div class="map-ancor-cont">
-            <span class="mas">Center locations on the map</span>
             <a href="#" class="map-ancor"> Center locations on the map</a>
           </div>
         </div>
@@ -457,7 +502,7 @@
               .st4,
               .st5 {
                 animation-name: scale;
-                animation-duration: 0.6s;
+                animation-duration: 0.8s;
                 animation-iteration-count: infinite;
                 transform-origin: center center;
                 transform-box: fill-box;
@@ -467,22 +512,34 @@
                 0% {
                   transform: scale(0, 0);
                 }
+                25% {
+                  transform: scale(0.5, 0.5);
+                }
                 50% {
+                  transform: scale(1, 1);
+                }
+                75% {
                   transform: scale(0.5, 0.5);
                 }
                 100% {
-                  transform: scale(1.2, 1.2);
+                  transform: scale(0, 0);
                 }
               }
               @-webkit-keyframes scale {
                 0% {
                   -webkit-transform: scale(0, 0);
                 }
+                25% {
+                  -webkit-transform: scale(0.5, 0.5);
+                }
                 50% {
+                  -webkit-transform: scale(1, 1);
+                }
+                75% {
                   -webkit-transform: scale(0.5, 0.5);
                 }
                 100% {
-                  -webkit-transform: scale(1.2, 1.2);
+                  -webkit-transform: scale(0, 0);
                 }
               }
             </style>
