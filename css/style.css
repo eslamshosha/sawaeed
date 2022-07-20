@@ -442,14 +442,21 @@ html[dir="ltr"] main .bg-after {
     width: 30%;
   }
   main .main-cont{
-    min-height: 100px;
+    min-height: unset;
+    padding: 0 20px;
   }
   main .main-captions {
     font-size: 34px;
     text-align: center;
+    white-space: unset;
+    width: 100%;
+    border: none;
   }
   .main-span {
     font-size: 20px;
+    white-space: unset;
+    position: relative;
+    width: 100%;
   }
   .main-cont-relative,
   html[dir="ltr"] .main-cont-relative {
