@@ -441,6 +441,9 @@ html[dir="ltr"] main .bg-after {
     bottom: -60px;
     width: 30%;
   }
+  main .main-cont{
+    min-height: 100px;
+  }
   main .main-captions {
     font-size: 34px;
     text-align: center;
