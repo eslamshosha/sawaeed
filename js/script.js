@@ -52,8 +52,7 @@ $(document).ready(function () {
       $stickyheader.removeClass("fixed-header", { duration: 500 });
     }
   });
-  
-  
+
   //scroll down button to about us section
   $("#scroll-to-about-section").click(function () {
     $("html, body").animate(
@@ -101,17 +100,17 @@ $(document).ready(function () {
     });
   }
   if ($(window).width() >= 767) {
-    setTimeout(
-      function header_animation(){
-          $('.main-captions').animate({width: '100%'}, 1500);
-          setTimeout(function(){ 
-              $('.main-captions').css("border","none");
-              $('.main-span').css("border-right","1px solid #fff");
-              $('.main-span').animate({width: '100%'}, 1500);
-              setTimeout(function(){ $('.main-span').css("border","none");},1500);
-          }, 1500);
-      }
-  , 700);
+    setTimeout(function header_animation() {
+      $(".main-captions").animate({ width: "100%" }, 1500);
+      setTimeout(function () {
+        $(".main-captions").css("border", "none");
+        $(".main-span").css("border-left", "1px solid #fff");
+        $(".main-span").animate({ width: "100%" }, 1500);
+        setTimeout(function () {
+          $(".main-span").css("border", "none");
+        }, 1500);
+      }, 1500);
+    }, 700);
   }
   ///////// **partner-section** /////////
   var screen = new Swiper(".partner-section .swiper-container", {
@@ -170,7 +169,7 @@ $(document).ready(function () {
       {
         scrollTop: 0,
       },
-      1500
+      1000
     );
   });
   $(this).scrollTop() >= 500
@@ -210,6 +209,22 @@ $(document).ready(function () {
         992: {
           slidesPerView: 1,
           spaceBetween: 25,
+        },
+      },
+      on: {
+        slideChange: function (honored) {
+          var borderRotate = document.getElementsByClassName("border-rotate");
+          if (honored.realIndex == 0) {
+            borderRotate[0].style.transform = "rotate(-81deg)";
+          } else if (honored.realIndex == 1) {
+            borderRotate[0].style.transform = "rotate(0deg)";
+          } else if (honored.realIndex == 2) {
+            borderRotate[0].style.transform = "rotate(100deg)";
+          } else if (honored.realIndex == 3) {
+            borderRotate[0].style.transform = "rotate(180deg)";
+          } else {
+            borderRotate[0].style.transform = "none";
+          }
         },
       },
     });
